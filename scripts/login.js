@@ -27,9 +27,11 @@
   			"username":   userName.val(),
 			"password":  password.val()
   		}
+  		// just to do it faster	
+  		events.publish('/login', null);
   		
 
-  		$.ajax({
+  		/*$.ajax({
 			type: "POST",
 			url: liveServerUrl + '/live/auth/login',
 			data: JSON.stringify(userData),
@@ -37,11 +39,7 @@
 			contentType: "application/json",
 			success: loginSuccessCallback,
 			error: loginErrorCallback
-		});
-
-  		// Check username and password combination
-  		/*loginErrorContent.text('Username and password are not recognized');
-	  	loginError.css('visibility', 'visible');*/
+		});*/
 
   	});
 })();

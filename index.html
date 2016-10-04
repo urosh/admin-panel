@@ -12,106 +12,50 @@
 </head>
 
 <body>
-    <div class="login-form">
-        <div class="header">
-        <!-- <span class="header icon-cogs"></span> -->
-        	<div class="logo-container">
-        		<div class="logo-holder holder">
-		            <img src="img/logo_32.png"/>
-        		</div>
-        		<div class="text-holder holder">
-        			<div class="top-text"><span class="left-text">market</span><span class="right-text">Notifications</span></div>
-        			<!-- <div class="bottom-text">Admin Page</div> -->
-		        </div>
-        		
-        	</div>
-        </div>
-        <div class="form-holder">
-        	<div class="login-error error">
-        		<span class="login-error-content error-content"></span>
-        	</div>
-            <form>
-                <div class="form-group username-group">
-                	
-                    <div class="input-group">
-                        <div class="input-group-addon"><span class="icon-user"></span></div>
-                        <input type="text" class="form-control" id="username" placeholder="Username">
-                    </div>
-                </div>
-                <div class="form-group password-group">
-                	<div class="input-group">
-                        <div class="input-group-addon"><span class="icon-key"></span></div>
-                        <input type="password" class="form-control" id="password" placeholder="Password">
-                    </div>
-                </div>
-                <div class="btn-group">
-	                <a href="#" class="login-btn btn">Log In</a>
-                	
-                </div>
-               	<!-- <button type="submit" class="btn btn-default">Login</button>
-               	                <button type="submit" class="btn btn-default">Login</button> -->
-            </form>
-        </div>
-    </div>
-    <div class="container content hidden">
-        <!-- <div class="row">
-	       	<div class="col-md-12"> -->
-        <div class="page-header">
-            <h2>Market Notifications Admin Page</h2>
-        </div>
-        <div>
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#notifications" aria-controls="notifications" role="tab" data-toggle="tab">Manage Notifications</a></li>
-                <li role="presentation"><a href="#permissions" aria-controls="permissions" role="tab" data-toggle="tab">Permissions</a></li>
-                <li role="presentation"><a href="#reports" aria-controls="reports" role="tab" data-toggle="tab">Reports</a></li>
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="notifications">
-                    <p class="title">
-                        <strong>Market Alerts</strong>
-                    </p>
-                    <div class="container tool-container">
-                        <div class="row ">
-                            <div class="col-md-4 tools">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Set Alert Duration</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <label for="alertDuration">Duration (seconds)</label>
-                                            <input type="number" id="alertDuration" min="1" max="100000" step="5" value="120" name="alert-duration">
-                                        </div>
-                                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                        <button type="button" id="saveDuration" class="btn btn-success saveDuration">Save</button>
-                                        <!-- Indicates a successful or positive action -->
-                                        <button type="button" id="testDuration" class="btn  btn-info testDuration">Test</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 tools">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Alert colors</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        Set alert duration
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="permissions">Permissions</div>
-                <div role="tabpanel" class="tab-pane" id="reports">Reports</div>
-            </div>
-        </div>
-        <!--  	</div>
-	      	    </div> -->
-    </div>
-    <div class></div>
+	<div class="content">
+	    <div id="login-form-holder" class="login-form">
+	        <div class="header">
+	        <!-- <span class="header icon-cogs"></span> -->
+	        	<div id="logo-container" class="logo-container">
+	        		<div class="logo-holder holder">
+			            <img src="img/logo_32.png"/>
+	        		</div>
+	        		<div class="text-holder holder">
+	        			<div class="top-text"><span class="left-text">market</span><span class="right-text">Notifications</span></div>
+	        			<!-- <div class="bottom-text">Admin Page</div> -->
+			        </div>
+	        		
+	        	</div>
+	        </div>
+	        <div class="form-holder">
+	        	<div class="login-error error">
+	        		<span class="login-error-content error-content"></span>
+	        	</div>
+	            <form>
+	                <div class="form-group username-group">
+	                	
+	                    <div class="input-group">
+	                        <div class="input-group-addon"><span class="icon-user"></span></div>
+	                        <input type="text" class="form-control" id="username" placeholder="Username">
+	                    </div>
+	                </div>
+	                <div class="form-group password-group">
+	                	<div class="input-group">
+	                        <div class="input-group-addon"><span class="icon-key"></span></div>
+	                        <input type="password" class="form-control" id="password" placeholder="Password">
+	                    </div>
+	                </div>
+	                <div class="btn-group">
+		                <a href="#" class="login-btn btn">Log In</a>
+	                	
+	                </div>
+	               	<!-- <button type="submit" class="btn btn-default">Login</button>
+	               	                <button type="submit" class="btn btn-default">Login</button> -->
+	            </form>
+	        </div>
+	    </div>
+	</div>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
