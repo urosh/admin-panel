@@ -1,5 +1,5 @@
 .panel-holder{
-	margin-top: 40px;
+	
 	
 }
 .header.panel-active{
@@ -12,10 +12,12 @@
 
 .panel-menu .panel-row{
 	height: 50px;
-	border-bottom: solid 1px #f2f2f2;
+	border-bottom: solid 1px #282d30;
+	overflow: hidden;
+	padding: 0 10px;
 }
 .panel-menu .panel-row:first-child{
-	border-top: solid 1px #f2f2f2;
+	border-top: solid 1px #282d30;
 }
 .panel-menu .panel-data{
 	float: left;
@@ -26,17 +28,22 @@
 	height: 50px;
 	/* border-right: solid 1px #f2f2f2; */
 	text-align: ceneter;
-	font-size: 36px;
-	line-height: 44px;
+	font-size: 16px;
+	line-height: 50px;
 }
 
 .panel-menu .panel-text{
 	
 	height: 50px;
-	width: 220px;
-	line-height: 50px;
+	width: 180px;
+	line-height: 47px;
 	font-size: 14px;
-	text-transform: uppercase;
-	
-	
+	font-weight: 300;
+}
+
+.login-form-panel-active .logo-container{
+	margin: 0;
+	padding-top: 30px;
+	height: 90px;
+
 }

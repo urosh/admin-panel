@@ -22,7 +22,17 @@ window.onload = (function() {
 		header.addClass('panel-active');
 		setTimeout(function(){
 			content.addClass('panel-active');
-			panelContent.load('templates/panel.html');
+			//panelContent.load('templates/panel.html');
+			$.ajax({
+			    url: "templates/panel.html",
+			    cache: false,
+			    dataType: "html",
+			    success: function(data) {
+			        panelContent.html(data);
+			    }
+			});
+
+
 			panelContent.addClass('panel-holder');
 			panelContent.removeClass('form-holder');
 		}, 500);
