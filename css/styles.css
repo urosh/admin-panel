@@ -10,8 +10,7 @@
 }
 .content.panel-active{
 	color: #282d30;
-	background: #e2e2e2;
-
+	background: #f2f2f2;
 }
 
 
@@ -38,7 +37,7 @@
 	left: 210px;
 	height: 100%;
 	width: 280px;
-	padding: 0 10px;
+	padding: 0;
 }
 
 /* Logo */
@@ -132,13 +131,11 @@
 	border-color: #e3e3e3;
 }
 
-.login-form input,
-.login-form input:-webkit-autofill {
+.login-form input {
 	border-radius: 0;
 	background: #33393d;
 	line-height: 16px;
 	font-size: 16px;
-	
 	height: 24px;
 	border: none;
 	padding: 0 0 3px 0;
@@ -149,10 +146,7 @@
 	color: #e2e2e2;
 	-webkit-box-shadow: none;
   	box-shadow: none;
-
-	
 }
-
 
 
 .login-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */

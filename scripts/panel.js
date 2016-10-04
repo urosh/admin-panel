@@ -6,6 +6,7 @@ window.onload = (function() {
 	var logoContainer = $('#logo-container');
 	var loginFormHolder = $('#login-form-holder');
 	var panelContent = $('.form-holder');
+	var header = $('.header');
 
 	var content = $('.content');
 
@@ -18,9 +19,12 @@ window.onload = (function() {
 		panelContent.empty();
 
 		loginFormHolder.addClass('login-form-panel-active');
+		header.addClass('panel-active');
 		setTimeout(function(){
 			content.addClass('panel-active');
 			panelContent.load('templates/panel.html');
+			panelContent.addClass('panel-holder');
+			panelContent.removeClass('form-holder');
 		}, 500);
 
 			
