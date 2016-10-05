@@ -14,13 +14,31 @@
 	height: 50px;
 	border-bottom: solid 1px #282d30;
 	overflow: hidden;
-	padding: 0 10px;
+	padding: 0;
+	cursor: pointer;
+	box-sizing: border-box;
+
 }
 .panel-menu .panel-row:first-child{
 	border-top: solid 1px #282d30;
 }
+/* .panel-menu .panel-row.active{
+	border-left: solid 4px #8dc74b;
+} */
 .panel-menu .panel-data{
 	float: left;
+}
+.panel-menu .panel-row .panel-marker{
+	background: #33393d;
+	width: 6px;
+	height: 100%;
+	margin-right: 10px;
+}
+.panel-menu .panel-row.active{
+	color: #8dc74b;
+}
+.panel-menu .panel-row.active .panel-marker{
+	background: #8dc74b;
 }
 
 .panel-menu .panel-icon{

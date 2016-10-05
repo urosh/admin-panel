@@ -1,19 +1,29 @@
 .content{
-	background: #282d30;
+	
 	color: #e2e2e2;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	transition: all 0.2s;
+	
 	font-family: "Roboto", sans-serif;
 }
-.content.panel-active{
+
+.dashboard-content{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: #282d30;
+	transition: all 0.2s;
+	padding: 20px 20px 20px 280px;
+	
+}
+
+.content.panel-active .dashboard-content{
 	color: #282d30;
 	background: #f2f2f2;
 }
-
 
 /* Login form */
 #login-form-holder{
@@ -33,9 +43,9 @@
 
 }
 .login-form-panel-active{
-	transform: translateY(-210px) translateX(-210px);
-	top: 210px;
-	left: 210px;
+	transform: translateY(0) translateX(0);
+	top: 0;
+	left: 0;
 	height: 100%;
 	width: 260px;
 	padding: 0;

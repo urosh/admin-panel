@@ -7,9 +7,14 @@ window.onload = (function() {
 	var loginFormHolder = $('#login-form-holder');
 	var panelContent = $('.form-holder');
 	var header = $('.header');
-
+	var panelRow;
 	var content = $('.content');
+	var currentMenuItem;
+	var menuMessages = [];
 
+	var panelMenuClicked = function(e) {
+
+	}
 	var panelInit = function() {
 		// initialize transition
 		// show panel 
@@ -28,7 +33,26 @@ window.onload = (function() {
 			    cache: false,
 			    dataType: "html",
 			    success: function(data) {
+			    	// Set panel data
 			        panelContent.html(data);
+
+			        // Populate menu information
+			        panelRow = $('.panel-row');
+			        currentMenuItem = $(panelRow[0]).attr('data-panel');
+			        $(panelRow[0]).addClass('active');
+			        // Initialize content
+			        events.publish('/content.' + currentMenuItem, null);
+
+			        // Handle user click on the menu
+			        panelRow.click(function(e){
+			        	panelRow.removeClass('active');
+			        	$(e.currentTarget).addClass('active');
+			        	// Update current menu item
+			        	currentMenuItem = $(e.currentTarget).attr('data-panel');
+
+			        	// Update content
+			        	events.publish('/content.' + currentMenuItem, null);
+			        });
 			    }
 			});
 

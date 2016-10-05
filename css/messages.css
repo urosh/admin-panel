@@ -1,0 +1,134 @@
+.dashboard.messages{
+	width: 100%;
+	height: 100%;
+
+}
+.dashboard-items{
+	background: #DCD9D9;
+	color: #282d30;
+	
+}
+.dashboard-user-filters{
+	position: absolute;
+}
+.send-button{
+    width: 140px;
+    position: relative;
+}
+
+.send-button .btn{
+	width: 160px;
+	text-transform: uppercase;
+	height: 40px;
+	padding-top: 10px;
+	
+}
+
+.messages .container {
+	margin: 0 0 30px 0;
+	padding: 10px;
+}
+.messages-filter-holder{
+	height: 70px;
+}
+.messages-input-holder{
+	
+	padding: 0 30px;
+}
+
+.messages-input-holder textarea{
+	width: 100%;
+}
+
+.messages-input-holder input{
+	padding:  0 10px;
+}
+
+.messages-input-holder textarea:focus,
+.messages-input-holder input:focus{
+	outline: 0 !important;
+	
+}
+.messages-input-holder input[type="text"] {
+	width: 100%;
+	height: 40px;
+}
+
+.input-content{
+	margin-bottom: 20px;
+	padding: 0 80px 10px 20px;
+}
+
+.input-content span{
+	text-transform: uppercase;
+}
+.messages .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	width: 170px;
+}
+
+.messages .btn-group {
+	margin: 0 30px 0 0; 
+    padding: 0;
+}
+.messages .dropdown{
+	display: inline-block;
+}
+.dashboard-items{
+	
+}
+.messages h2{
+	font-weight: 400;
+	font-size: 28px;
+	text-transform: uppercase;
+	margin: 10px 0 30px;
+}
+
+.messages .btn{
+	border-radius: 0;
+	box-shadow: none;
+	text-shadow: none;
+	background-image: none;
+	background: none;
+	margin-right: 20px;
+	background-color: #0f5b8e;
+	color: #f2f2f2;
+	border: none;
+}
+.messages .btn:active{
+	background-color: #0f5b8e;
+	color: #f2f2f2;
+	border: none;
+}
+.messages .btn-group.open .dropdown-toggle{
+	background-color: #0f5b8e;
+	color: #f2f2f2;
+	border: none;
+	box-shadow: none;
+}
+.messages .btn:hover{
+	background-color: #0f5b8e;
+	color: #f2f2f2;
+	border: none;
+	outline: 0 !important;
+}
+
+.messages .btn:visited{
+	background-color: #0f5b8e;
+	color: #f2f2f2;
+	border: none;
+	outline: 0 !important;
+}
+
+
+.messages .btn:active{
+	background-color: #0f5b8e;
+	color: #f2f2f2;
+}
+.btn.dropdown-toggle.btn-default:focus {
+   outline: 0 !important; 
+   outline: none;
+   outline-offset:0; 
+}
+.messages .btn.message-btn{
+	background: #8dc74b;
+}
