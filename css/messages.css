@@ -8,34 +8,29 @@
 	color: #282d30;
 	
 }
-.dashboard-user-filters{
-	position: absolute;
-}
-.send-button{
-    width: 140px;
-    position: relative;
-}
-
-.send-button .btn{
-	width: 160px;
-	text-transform: uppercase;
-	height: 40px;
-	padding-top: 10px;
-	
-}
 
 .messages .container {
 	margin: 0 0 30px 0;
 	padding: 10px;
 }
+
+.messages h2{
+	font-weight: 400;
+	font-size: 28px;
+	text-transform: uppercase;
+	margin: 10px 0 30px;
+}
+
 .messages-filter-holder{
 	height: 70px;
 }
 .messages-input-holder{
-	
 	padding: 0 30px;
 }
 
+
+
+/* Text inputs */
 .messages-input-holder textarea{
 	width: 100%;
 }
@@ -54,18 +49,20 @@
 	height: 40px;
 }
 
-.input-content{
+.messages-input-holder .col-sm-6{
 	margin-bottom: 20px;
 	padding: 0 80px 10px 20px;
 }
 
-.input-content span{
+.messages-input-holder span{
 	text-transform: uppercase;
 }
+
+
+/* Select users options styling */
 .messages .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
 	width: 170px;
 }
-
 .messages .btn-group {
 	margin: 0 30px 0 0; 
     padding: 0;
@@ -73,16 +70,6 @@
 .messages .dropdown{
 	display: inline-block;
 }
-.dashboard-items{
-	
-}
-.messages h2{
-	font-weight: 400;
-	font-size: 28px;
-	text-transform: uppercase;
-	margin: 10px 0 30px;
-}
-
 .messages .btn{
 	border-radius: 0;
 	box-shadow: none;
@@ -119,7 +106,6 @@
 	outline: 0 !important;
 }
 
-
 .messages .btn:active{
 	background-color: #0f5b8e;
 	color: #f2f2f2;
@@ -129,6 +115,24 @@
    outline: none;
    outline-offset:0; 
 }
+
+/* Send button */
 .messages .btn.message-btn{
 	background: #8dc74b;
 }
+
+.send-button{
+    width: 160px;
+    position: relative;
+    float: right;
+}
+
+.send-button .btn{
+	width: 160px;
+	text-transform: uppercase;
+	height: 40px;
+	padding-top: 10px;
+	
+}
+
+
