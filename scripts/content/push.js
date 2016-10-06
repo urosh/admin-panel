@@ -1,5 +1,5 @@
 (function(){
-	var pushSubscription = events.subscribe('/content.push', function() {
+	var pushSubscription = events.subscribe(eventNames.push._INIT_, function() {
 		// Do something now that the event has occurred
 		pushInit();
 	});

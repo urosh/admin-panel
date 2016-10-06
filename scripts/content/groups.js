@@ -1,5 +1,5 @@
 (function(){
-	var groupsSubscription = events.subscribe('/content.groups', function() {
+	var groupsSubscription = events.subscribe(eventNames.groups._INIT_, function() {
 		// Do something now that the event has occurred
 		groupsInit();
 	});

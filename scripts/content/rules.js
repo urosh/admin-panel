@@ -1,5 +1,5 @@
 (function(){
-	var rulesSubscription = events.subscribe('/content.rules', function() {
+	var rulesSubscription = events.subscribe(eventNames.rules._INIT_, function() {
 		// Do something now that the event has occurred
 		rulesInit();
 	});

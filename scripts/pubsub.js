@@ -28,3 +28,31 @@ var events = (function(){
     }
   };
 })();
+
+var eventNames = {
+	'languages': {
+		'_INIT_' : '/content.languages',
+		'_GET_LANGUAGES_' : '/content.langagues.get',
+		'_SET_LANGUAGES_' : '/content.languages.set'
+	},
+	'messages': {
+		'_INIT_': '/content.messages'
+	},
+	'push': {
+		'_INIT_': '/content.push'
+	},
+	'alerts': {
+		'_INIT_': '/content.alerts'
+	},
+	'groups': {
+		'_INIT_': '/content.groups'
+	},
+	'reports': {
+		'_INIT_': '/content.reports'
+	},
+	'rules': {
+		'_INIT_': '/content.rules'
+	},
+
+	
+}
