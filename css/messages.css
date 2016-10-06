@@ -28,7 +28,9 @@
 	padding: 0 30px;
 }
 
-
+.dropdown-menu{
+	border-radius: 0;
+}
 
 /* Text inputs */
 .messages-input-holder textarea{
